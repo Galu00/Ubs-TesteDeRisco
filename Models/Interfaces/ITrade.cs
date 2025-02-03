@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace UbsDevRisk.Models.Interfaces
 {
-    internal interface ITrade
+    public interface ITrade
     {
+        double Value { get; }
+        string ClientSector { get; }
+        DateTime NextPaymentDate { get; }
     }
 }
