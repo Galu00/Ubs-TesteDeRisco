@@ -8,13 +8,11 @@ using UbsDevRisk.Rules.Interfaces;
 
 namespace UbsDevRisk.Rules
 {
-    public class MediumRiskRule : ICategoryRule
+    public class MediumRiskRule : BaseCategoryRule
     {
-        public string Category => "MEDIUMRISK";
-        public bool Matches(ITrade trade, DateTime referenceDate)
-        {
-            return trade.Value > 1000000 && trade.ClientSector == "Public";
-        }
+        public override string Category => "MEDIUMRISK";
+        public override bool Matches(ITrade trade, DateTime referenceDate) =>
+            trade.Value > 1_000_000 && trade.ClientSector.Equals("Public", StringComparison.OrdinalIgnoreCase);
     }
 
 }

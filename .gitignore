@@ -1,1 +1,26 @@
+# Build files
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.sourcelink.json
+
+# User-specific files (configurações locais do usuário)
+.vscode/
 .vs/
+*.user
+*.suo
+*.plist
+
+# Logs
+*.log
+
+# Dependency cache (evita que pacotes NuGet sejam versionados)
+packages/
+!packages/repositories.config
+
+# Arquivos do sistema operacional
+Thumbs.db
+ehthumbs.db

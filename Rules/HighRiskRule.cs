@@ -8,12 +8,10 @@ using UbsDevRisk.Rules.Interfaces;
 
 namespace UbsDevRisk.Rules
 {
-    public class HighRiskRule : ICategoryRule
+    public class HighRiskRule : BaseCategoryRule
     {
-        public string Category => "HIGHRISK";
-        public bool Matches(ITrade trade, DateTime referenceDate)
-        {
-            return trade.Value > 1000000 && trade.ClientSector == "Private";
-        }
+        public override string Category => "HIGHRISK";
+        public override bool Matches(ITrade trade, DateTime referenceDate) =>
+            trade.Value > 1_000_000 && trade.ClientSector.Equals("Private", StringComparison.OrdinalIgnoreCase);
     }
 }

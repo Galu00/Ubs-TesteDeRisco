@@ -8,12 +8,10 @@ using UbsDevRisk.Rules.Interfaces;
 
 namespace UbsDevRisk.Rules
 {
-    public class ExpiredRule : ICategoryRule
+    public class ExpiredRule : BaseCategoryRule
     {
-        public string Category => "EXPIRED";
-        public bool Matches(ITrade trade, DateTime referenceDate)
-        {
-            return (referenceDate - trade.NextPaymentDate).Days > 30;
-        }
+        public override string Category => "EXPIRED";
+        public override bool Matches(ITrade trade, DateTime referenceDate) =>
+            (referenceDate - trade.NextPaymentDate).Days > 30;
     }
 }

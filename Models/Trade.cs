@@ -15,6 +15,9 @@ namespace UbsDevRisk.Models
 
         public Trade(double value, string clientSector, DateTime nextPaymentDate)
         {
+            if (string.IsNullOrWhiteSpace(clientSector))
+                throw new ArgumentException("Client sector cannot be null or empty.", nameof(clientSector));
+
             Value = value;
             ClientSector = clientSector;
             NextPaymentDate = nextPaymentDate;
