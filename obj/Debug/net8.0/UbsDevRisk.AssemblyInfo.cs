@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UbsDevRisk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32ebaed43ec218860f73b94bdee00ae1c796ac65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c636aee1ea890e81ef03a0eb243447fb35971ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("UbsDevRisk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UbsDevRisk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
