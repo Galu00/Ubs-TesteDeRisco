@@ -1,4 +1,7 @@
-﻿using UbsDevRisk.Models.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using UbsDevRisk.Models.Interfaces;
 using UbsDevRisk.Models;
 using UbsDevRisk.Services;
 
@@ -6,17 +9,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        DateTime referenceDate = DateTime.Parse(Console.ReadLine());
+        string dateFormat = "MM/dd/yyyy";
+
+        DateTime referenceDate = DateTime.ParseExact(Console.ReadLine(), dateFormat, CultureInfo.InvariantCulture);
+
         int n = int.Parse(Console.ReadLine());
         List<ITrade> trades = new List<ITrade>();
-
 
         for (int i = 0; i < n; i++)
         {
             string[] input = Console.ReadLine().Split(' ');
-            double value = double.Parse(input[0]);
+
+            double value = double.Parse(input[0], CultureInfo.InvariantCulture);
             string clientSector = input[1];
-            DateTime nextPaymentDate = DateTime.Parse(input[2]);
+
+            DateTime nextPaymentDate = DateTime.ParseExact(input[2], dateFormat, CultureInfo.InvariantCulture);
 
             trades.Add(new Trade(value, clientSector, nextPaymentDate));
         }

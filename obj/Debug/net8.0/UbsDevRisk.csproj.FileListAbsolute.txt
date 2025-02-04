@@ -1,0 +1,15 @@
+D:\Personal Study\UbsDevRisk\bin\Debug\net8.0\UbsDevRisk.exe
+D:\Personal Study\UbsDevRisk\bin\Debug\net8.0\UbsDevRisk.deps.json
+D:\Personal Study\UbsDevRisk\bin\Debug\net8.0\UbsDevRisk.runtimeconfig.json
+D:\Personal Study\UbsDevRisk\bin\Debug\net8.0\UbsDevRisk.dll
+D:\Personal Study\UbsDevRisk\bin\Debug\net8.0\UbsDevRisk.pdb
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.AssemblyInfoInputs.cache
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.AssemblyInfo.cs
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.csproj.CoreCompileInputs.cache
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.sourcelink.json
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.dll
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\refint\UbsDevRisk.dll
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.pdb
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\UbsDevRisk.genruntimeconfig.cache
+D:\Personal Study\UbsDevRisk\obj\Debug\net8.0\ref\UbsDevRisk.dll
